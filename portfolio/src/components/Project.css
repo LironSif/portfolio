@@ -1,0 +1,20 @@
+.Projects-contianer{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    background: linear-gradient(to bottom right, #ff9a9e 0%, #fad0c4 50%, #fad0c4 100%);
+    color: #333
+}
+
+.Projects{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    gap: 10px;
+  
+}
