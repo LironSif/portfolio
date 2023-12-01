@@ -11,7 +11,7 @@ const Hero = () => {
           <h1 className='hero-h1'>FULL STACK DEVALOPER & A PERSON</h1>
         </div>
         <div className='hero-div-2'>
-          <h2 className='hero-h2'>I am not a designer, but somewhat of a coder, and definitely a go-getter.</h2>
+          <h2 className='hero-h2'>I am a designer, somewhat of a coder, and definitely a go-getter.</h2>
         </div>
         <div className='hero-div-3'>
           <h1 className='hero-h3'>MADE BY APPLESEEDS <br />
