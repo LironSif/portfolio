@@ -1,20 +1,157 @@
-.Projects-contianer{
-    width: 100vw;
-    height: 100vh;
+
+.Projects-container {
+    width: 100%;
+    min-height: 100vh;
+    padding: 20px;
+    background: rgb(231, 221, 221);
     display: flex;
     flex-direction: column;
-    justify-content: center;
     align-items: center;
-    gap: 10px;
-    background: linear-gradient(to bottom right, #ff9a9e 0%, #fad0c4 50%, #fad0c4 100%);
-    color: #333
-}
+    justify-content: space-around;
+    box-sizing: border-box;
+  }
+  
+  .big-h2 {
+    text-transform: uppercase;
+    font-size: 3.375rem;
+    line-height: 1.2;
+  }
+  
+  @media screen and (max-width: 768px) {
+    .Projects-container h2 {
+      font-size: 2rem;
+    }
+  }
+  
 
-.Projects{
+  .Projects {
     display: flex;
     justify-content: center;
-    align-items: center;
-    margin-top: 20px;
-    gap: 10px;
+    gap: 20px;
+    width: 80%;
+    max-width: 1200px;
+  }
   
-}
+
+  .project-card {
+    background-color: rgb(221, 231, 231);
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    padding: 16px;
+    gap: 10px;
+    text-align: center;
+    max-width: 300px;
+    height: 450px;
+    margin: 10px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease;
+  }
+  
+  .project-card img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 4px;
+    margin-bottom: 12px;
+  }
+  
+  .project-card h2 {
+    color: #191717;
+    font-size: 1.5rem;
+    margin-bottom: 8px;
+  }
+  
+  .project-card p {
+    color: #8e8a8a;
+    margin-top: 2rem;
+    font-size: 1rem;
+    margin-bottom: 12px;
+    flex-grow: 1;
+  }
+  
+  .project-links {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+  }
+  
+  .project-links a {
+    text-decoration: none;
+    color: #007bff;
+    font-weight: bold;
+  }
+  
+  .project-links a:hover {
+    text-decoration: underline;
+  }
+  
+  @keyframes slideInFromLeft {
+    from {
+      transform: translateX(-100%);
+      opacity: 0;
+    }
+    to {
+      transform: translateX(0);
+      opacity: 1;
+    }
+  }
+  
+  @keyframes slideInFromRight {
+    from {
+      transform: translateX(100%);
+      opacity: 0;
+    }
+    to {
+      transform: translateX(0);
+      opacity: 1;
+    }
+  }
+  
+  @keyframes slideInFromTop {
+    from {
+      transform: translateY(-100%);
+      opacity: 0;
+    }
+    to {
+      transform: translateY(0);
+      opacity: 1;
+    }
+  }
+  
+  @keyframes slideInFromBottom {
+    from {
+      transform: translateY(100%);
+      opacity: 0;
+    }
+    to {
+      transform: translateY(0);
+      opacity: 1;
+    }
+  }
+  
+  .Projects-container.animate .project-card[data-animate="animation-0"] {
+    animation-name: slideInFromLeft;
+    animation-duration: 0.8s;
+    animation-fill-mode: both;
+  }
+  
+  .Projects-container.animate .project-card[data-animate="animation-1"] {
+    animation-name: slideInFromRight;
+    animation-duration: 0.8s;
+    animation-fill-mode: both;
+  }
+  
+  .Projects-container.animate .project-card[data-animate="animation-2"] {
+    animation-name: slideInFromTop;
+    animation-duration: 0.8s;
+    animation-fill-mode: both;
+  }
+  
+  .Projects-container.animate .project-card[data-animate="animation-3"] {
+    animation-name: slideInFromBottom;
+    animation-duration: 0.8s;
+    animation-fill-mode: both;
+  }
+  
