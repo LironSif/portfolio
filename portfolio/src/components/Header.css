@@ -1,5 +1,6 @@
 nav {
   font-family: "Brandon bld", sans-serif;
+  position: fixed;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -9,9 +10,8 @@ nav {
   text-transform: uppercase;
   font-weight: 600;
   width: 100%;
-  height: 8vh;
-  padding-right: 10px;
-  padding-left: 10px;
+  padding: 0.2rem 4rem;
+  z-index: 1000;
 }
 
 .nav-btn {
@@ -20,7 +20,6 @@ nav {
   justify-content: space-evenly;
   text-align: center;
   gap: 10px;
-  padding: 2rem;
 }
 
 .logo {
@@ -32,7 +31,7 @@ nav {
   max-width: 50px;
   height: auto;
   display: block;
-  margin:  1vw  0 ;
+  /* margin:  1vw  0 ; */
   border-radius: 50%;
 }
 

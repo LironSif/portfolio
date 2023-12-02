@@ -4,7 +4,7 @@ import React from 'react';
 import './About.css'; 
 const About = () => {
   return (
-    <div className="about-container">
+    <div className="about-container" id='About me'>
       <h3 className="about-heading">8+ MINUTES OF EXPERIENCE IN FULL STACK DEVELOPMENT</h3>
       <div className="about-content">
         <div className="about-left">

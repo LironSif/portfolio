@@ -1,14 +1,13 @@
-import { useState } from 'react'
 import './App.css'
 import Header from './components/Header'
 import Hero from './components/Hero'
 import About from './components/About'
 import Projects from './components/Projects'
 import Footer from './components/Footer'
+import Form from './components/Form'
 
 
 function App() {
-
 
   return (
     <>
@@ -16,6 +15,7 @@ function App() {
     <Hero/>
     <About/>
     <Projects/>
+    <Form/>
     <Footer/>
     </>
   )

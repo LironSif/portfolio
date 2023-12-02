@@ -5,7 +5,7 @@ import logo from "../assets/30.png";
 
 const Hero = () => {
   return (
-    <main>
+    <main id='Home'>
       <div className='hero-main-div-1'>
         <div className='hero-div-1'>
           <h1 className='hero-h1'>FULL STACK DEVALOPER & A PERSON</h1>

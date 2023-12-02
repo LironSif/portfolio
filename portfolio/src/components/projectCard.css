@@ -1,6 +1,6 @@
 
 .project-card {
-  background-color: rgb(221, 231, 231);
+  background-color:#219ebc;
   border-radius: 8px;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   display: flex; 
@@ -17,7 +17,7 @@
 
 .project-card:hover {
   cursor: pointer;
-  transform: translateY(50px);
+  transform: translateY(10px);
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
@@ -53,8 +53,11 @@
   text-decoration: none;
   color: #007bff;
   font-weight: bold;
+  background-color:#ffb703 ;
+  border-radius: 5px;
+  padding: 3px;
 }
 
 .project-links a:hover {
-  text-decoration: underline;
+  text-decoration: none;
 }
